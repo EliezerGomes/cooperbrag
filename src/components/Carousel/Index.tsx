@@ -6,7 +6,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "./index.css";
 
 interface CarouselProps {
-  imgs: string[]
+  imgs?: string[]
 }
 
 export function Carousel({ imgs } : CarouselProps) {

@@ -1,0 +1,41 @@
+.quem-somos-container {
+    text-align: center;
+}
+
+.quem-somos-title {
+    font-size: 2rem;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.quem-somos-text {
+    font-weight: bold;
+    text-align: center;
+    max-width: 800px; /* Largura máxima do texto */
+    margin: 0 auto; /* Centralizar */
+}
+
+/* Estilização para Desktop */
+.quem-somos-desktop {
+    font-size: 1.5rem;
+    display: block;
+}
+
+/* Estilização para Mobile */
+.quem-somos-mobile {
+    font-size: 1.2rem;
+    display: none;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .quem-somos-desktop {
+        display: none;
+    }
+
+    .quem-somos-mobile {
+        display: block;
+    }
+}
