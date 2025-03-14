@@ -1,41 +1,77 @@
+/* Quem Somos container */
 .quem-somos-container {
+    width: 100%;
+    padding: 40px 20px;
+    background-color: #f8f9fa; /* Consistent light background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 300px; /* Ensure enough vertical space */
+  }
+  
+  /* Quem Somos title */
+  .quem-somos-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 30px 0; /* Space below title */
     text-align: center;
-}
-
-.quem-somos-title {
-    font-size: 2rem;
-    padding: 10px 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    display: inline-block;
-}
-
-.quem-somos-text {
-    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  /* Quem Somos text */
+  .quem-somos-text {
+    max-width: 800px; /* Limits the text width for readability */
+    width: 100%;
     text-align: center;
-    max-width: 800px; /* Largura máxima do texto */
-    margin: 0 auto; /* Centralizar */
-}
-
-/* Estilização para Desktop */
-.quem-somos-desktop {
-    font-size: 1.5rem;
-    display: block;
-}
-
-/* Estilização para Mobile */
-.quem-somos-mobile {
-    font-size: 1.2rem;
-    display: none;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-    .quem-somos-desktop {
-        display: none;
+  }
+  
+  .quem-somos-text p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  /* Responsive Design for QuemSomos */
+  
+  /* Tablets and smaller desktops (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    .quem-somos-title {
+      font-size: 2rem;
     }
-
-    .quem-somos-mobile {
-        display: block;
+  
+    .quem-somos-text p {
+      font-size: 1rem;
     }
-}
+  }
+  
+  /* Mobile devices (max-width: 768px) */
+  @media (max-width: 768px) {
+    .quem-somos-container {
+      padding: 20px 10px;
+    }
+  
+    .quem-somos-title {
+      font-size: 1.8rem;
+    }
+  
+    .quem-somos-text {
+      max-width: 90%; /* Wider on mobile for better readability */
+    }
+  
+    .quem-somos-text p {
+      font-size: 0.95rem;
+    }
+  }
+  
+  /* Smaller mobile devices (max-width: 480px) */
+  @media (max-width: 480px) {
+    .quem-somos-title {
+      font-size: 1.5rem;
+    }
+  
+    .quem-somos-text p {
+      font-size: 0.9rem;
+    }
+  }

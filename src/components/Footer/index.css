@@ -1,0 +1,158 @@
+/* Footer container */
+.footer-container {
+    background-color: #000080; /* Navy blue background */
+    color: #fff; /* White text for contrast */
+    padding: 20px 20px 10px;
+    width: 100%;
+  }
+  
+  /* Footer content wrapper */
+  .footer-content {
+    display: flex;
+    justify-content: center; /* Center the sections horizontally */
+    flex-wrap: wrap;
+    gap: 40px; /* Space between sections */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Add padding to prevent sections from touching edges */
+  }
+  
+  /* Footer section */
+  .footer-section {
+    flex: 1;
+    min-width: 150px;
+    max-width: 250px; /* Limit the width of each section for better centering */
+    text-align: left; /* Keep text aligned left within sections */
+  }
+  
+  .footer-section h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-section li {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    color: #ddd; /* Lighter gray for list items */
+  }
+  
+  .footer-section.address-section p {
+    font-size: 0.9rem;
+    color: #ddd;
+    margin: 0;
+    line-height: 1.4; /* Ensure proper spacing with line breaks */
+  }
+  
+  /* Footer bottom section */
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    border-top: 1px solid #444; /* Subtle divider */
+    padding-top: 10px;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    margin-right: 15px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #ddd; /* Lighter color on hover */
+  }
+  
+  .copyright {
+    font-size: 0.8rem;
+    color: #ddd;
+    margin: 0;
+  }
+  
+  /* Responsive Design for Footer */
+  
+  /* Tablets and smaller desktops (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    .footer-content {
+      gap: 30px; /* Reduce gap on smaller screens */
+    }
+  
+    .footer-section h3 {
+      font-size: 1.1rem;
+    }
+  
+    .footer-section li,
+    .footer-section.address-section p {
+      font-size: 0.85rem;
+    }
+  }
+  
+  /* Mobile devices (max-width: 768px) */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px; /* Smaller gap for mobile */
+    }
+  
+    .footer-section {
+      width: 100%;
+      max-width: 100%; /* Full width on mobile */
+      text-align: center; /* Center-align text on mobile */
+    }
+  
+    .footer-section h3 {
+      font-size: 1rem;
+    }
+  
+    .footer-section li,
+    .footer-section.address-section p {
+      font-size: 0.8rem;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+    }
+  
+    .social-icons {
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Smaller mobile devices (max-width: 480px) */
+  @media (max-width: 480px) {
+    .footer-container {
+      padding: 15px 10px 5px;
+    }
+  
+    .footer-section h3 {
+      font-size: 0.9rem;
+    }
+  
+    .footer-section li,
+    .footer-section.address-section p {
+      font-size: 0.75rem;
+    }
+  
+    .social-icons a {
+      font-size: 1rem;
+      margin-right: 10px;
+    }
+  
+    .copyright {
+      font-size: 0.7rem;
+    }
+  }

@@ -1,51 +1,26 @@
 import "./index.css";
 
-import { Carousel } from "../Carousel/Index";
-
 export function MenuCars() {
-  const cars = [
-    {
-      name: "Carro 1",
-      images: [
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNX-0p5rB_PI0B6oXnnUTkfCp_uZ1DBtcyYQ&s",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIOsQgOKrn_Qf4OMVjI0dU75e_hZlgEiUnKg&s",
-      ],
-    },
-    {
-      name: "Carro 2",
-      images: [
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNX-0p5rB_PI0B6oXnnUTkfCp_uZ1DBtcyYQ&s",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIOsQgOKrn_Qf4OMVjI0dU75e_hZlgEiUnKg&s",
-      ],
-    },
-    {
-      name: "Carro 3",
-      images: [
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNX-0p5rB_PI0B6oXnnUTkfCp_uZ1DBtcyYQ&s",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIOsQgOKrn_Qf4OMVjI0dU75e_hZlgEiUnKg&s",
-      ],
-    },
-    {
-      name: "Carro 4",
-      images: [
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNX-0p5rB_PI0B6oXnnUTkfCp_uZ1DBtcyYQ&s",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIOsQgOKrn_Qf4OMVjI0dU75e_hZlgEiUnKg&s",
-      ],
-    },
-  ];
-
   return (
     <div className="container-menu-cars">
-      <h2>Conheça nossa frota de veículos</h2>
-
-      <div className="menu-cars">
-        {cars.map((item, index) => (
-          <div className="item-car" key={index}>
-            <h3 className="title-car">{item.name}</h3>
-
-            <Carousel imgs={item.images} />
+      <div className="content-wrapper">
+        {/* Left side: Placeholder for the vehicle image */}
+        <div className="image-section">
+          {/* You can add your vehicle image here */}
+          <div className="image-placeholder">
+            {/* Placeholder for the image, replace with <img> when you have the source */}
+            <p>[Vehicle Image Placeholder]</p>
           </div>
-        ))}
+        </div>
+
+        {/* Right side: Text and button */}
+        <div className="text-section">
+          <h1>Contamos com veículos de alta qualidade</h1>
+          <p>
+            Nossos veículos são selecionados com rigor para garantir a máxima confiabilidade e segurança em cada viagem. Com manutenção regular, tecnologia de ponta e uma frota moderna, asseguramos que o seu serviço seja efetudo com sucesso. Confie em nossa experiência para atender às suas necessidades de transporte com eficiência e qualidade.
+          </p>
+          <button className="saiba-mais-btn">Saiba mais +</button>
+        </div>
       </div>
     </div>
   );

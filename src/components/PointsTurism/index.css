@@ -1,134 +1,158 @@
-/* Cabeçalho */
-.turismo-header {
-    max-width: 750px;
-    margin: 0 auto;
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-.turismo-title {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    background-color: #991b1b; /* Vermelho escuro */
-    border-radius: 8px;
-    color: white;
-    padding: 10px;
-    display: inline-block;
-}
-
-/* Botões de Tabs */
-.turismo-tabs {
+/* Container for tourist packages */
+.container-tourist-packages {
+    width: 100%;
+    padding: 40px 20px;
+    background-color: #f5f5f5; /* Light background consistent with previous components */
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin: 0 10px 20px;
-}
-
-.tab-button {
-    padding: 12px;
-    width: 50%;
-    font-weight: bold;
-    border: 2px solid #991b1b;
-    border-radius: 10px;
-    background-color: white;
-    color: #991b1b;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-.tab-button.active {
-    background-color: #991b1b;
-    color: white;
-}
-
-/* Grade de Itens */
-.turismo-grid {
-    display: grid;
-    gap: 20px;
-    padding: 10px;
-    margin-bottom: 40px;
-    grid-template-columns: repeat(1, 1fr); /* 1 coluna padrão */
-    justify-content: center;
-}
-
-/* Layout responsivo */
-@media (min-width: 768px) {
-    .turismo-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 colunas no tablet */
-    }
-}
-
-@media (min-width: 1024px) {
-    .turismo-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 colunas no desktop */
-        gap: 30px;
-    }
-}
-
-/* Cartão */
-.turismo-card {
-    background-color: white;
-    border: 2px solid #ccc;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
+    align-items: center;
+    min-height: 400px; /* Ensure there's enough space */
+  }
+  
+  /* Wrapper for content (text + image) */
+  .container-tourist-packages .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Max width for larger screens */
+    width: 100%;
+    gap: 40px; /* Space between text and image */
+  }
+  
+  /* Text section (already defined, reusing from MenuCars) */
+  .text-section {
+    flex: 1;
     display: flex;
     flex-direction: column;
+    gap: 20px; /* Space between elements */
+  }
+  
+  .text-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+    line-height: 1.2;
+  }
+  
+  .text-section p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  /* Image section (already defined, reusing from MenuCars) */
+  .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
     align-items: center;
-}
-
-/* Imagem */
-.turismo-image img {
+  }
+  
+  .image-placeholder {
+    width: 100%;
+    height: 300px;
+    background-color: #e0e0e0; /* Placeholder background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 8px;
-    max-width: 100%;
-}
-
-/* Linha divisória */
-.turismo-divider {
-    width: 100%;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-}
-
-/* Texto do Card */
-.turismo-card-title {
-    margin-bottom: 5px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.turismo-card-subtitle {
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-/* Botão */
-.turismo-button {
-    background-color: #047857; /* Verde escuro */
-    color: white;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    display: inline-block;
-    position: relative; /* Necessário para a pseudo-elemento */
-    overflow: hidden; /* Garante que o brilho não saia do botão */
-    transition: background 0.3s;
-}
-
-.turismo-button::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%; /* Começa fora do botão */
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(120deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.2) 100%);
-    transform: skewX(-25deg);
-    transition: left 0.5s ease-in-out;
-}
-
-.turismo-button:hover {
-    background-color: #065f46;
-}
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Button styling (already defined, reusing from MenuCars) */
+  .saiba-mais-btn {
+    background-color: #000080; /* Navy blue */
+    color: #fff; /* White text */
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+  }
+  
+  .saiba-mais-btn:hover {
+    background-color: #000066; /* Slightly darker shade on hover */
+  }
+  
+  /* Responsive Design for TouristPackages */
+  
+  /* Tablets and smaller desktops (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    .container-tourist-packages .content-wrapper {
+      gap: 30px;
+    }
+  
+    .text-section h1 {
+      font-size: 2rem;
+    }
+  
+    .text-section p {
+      font-size: 1rem;
+    }
+  
+    .image-placeholder {
+      height: 250px;
+    }
+  }
+  
+  /* Mobile devices (max-width: 768px) */
+  @media (max-width: 768px) {
+    .container-tourist-packages .content-wrapper {
+      flex-direction: column; /* Stack text and image vertically */
+      gap: 20px;
+    }
+  
+    .text-section,
+    .image-section {
+      flex: none;
+      width: 100%;
+      text-align: center; /* Center-align text for mobile */
+    }
+  
+    .text-section h1 {
+      font-size: 1.8rem;
+    }
+  
+    .text-section p {
+      font-size: 0.95rem;
+    }
+  
+    .image-placeholder {
+      height: 200px;
+    }
+  
+    .saiba-mais-btn {
+      margin: 0 auto; /* Center the button */
+    }
+  }
+  
+  /* Smaller mobile devices (max-width: 480px) */
+  @media (max-width: 480px) {
+    .container-tourist-packages {
+      padding: 20px 10px;
+    }
+  
+    .text-section h1 {
+      font-size: 1.5rem;
+    }
+  
+    .text-section p {
+      font-size: 0.9rem;
+    }
+  
+    .image-placeholder {
+      height: 150px;
+    }
+  
+    .saiba-mais-btn {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  }
