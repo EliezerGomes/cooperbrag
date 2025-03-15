@@ -21,7 +21,6 @@ export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado para o menu mobile
   const contact = "+5591992643006"; // WhatsApp number from Packages component
-  const defaultMessage = "Quero entrar em contato sobre os serviços!"; // Custom message for the header
 
   // Detecta o scroll
   useEffect(() => {
