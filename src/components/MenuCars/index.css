@@ -46,6 +46,25 @@
   display: block; /* Remove any default inline spacing */
 }
 
+/* Existing CSS (assumed from your previous context) */
+.saiba-mais-btn {
+  background-color: #000080; /* Navy blue as requested */
+  color: #fff; /* White text */
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+  text-decoration: none;
+}
+
+.saiba-mais-btn:hover {
+  background-color: #000066; /* Slightly darker shade on hover */
+}
+
 /* Text section styling */
 .text-section {
   flex: 1;

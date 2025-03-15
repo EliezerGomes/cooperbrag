@@ -1,5 +1,6 @@
 import "./index.css";
-import orla from "../../assets/orla-braganca2.jpg"
+import orla from "../../assets/orla-braganca2.jpg";
+import { Link } from "react-router-dom"; // Import Link for navigation
 
 export function PointTurism() {
   return (
@@ -11,12 +12,13 @@ export function PointTurism() {
           <p>
             Descubra o Pará como nunca antes, com nossos pacotes turísticos cuidadosamente elaborados! Oferecemos experiências inesquecíveis para os melhores destinos, como a deslumbrante Orla de Ajuruteua, a tranquila Praia de Caripi, a charmosa Orla de Bragança e o histórico Teatro da Paz. Nossos pacotes são pensados para proporcionar conforto, segurança e momentos únicos, garantindo que você aproveite ao máximo cada ponto turístico dessa região incrível.
           </p>
-          <button className="saiba-mais-btn">Saiba mais +</button>
+          <Link to="/packages" className="saiba-mais-btn">
+            Saiba mais +
+          </Link>
         </div>
 
         {/* Right side: Placeholder for the image */}
         <div className="image-section">
-          {/* Placeholder for the image, replace with <img> when you have the source */}
           <div className="image-placeholder">
             <img src={orla} alt="Orla" />
           </div>
