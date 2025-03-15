@@ -1,24 +1,20 @@
 {
+  "extends": "./tsconfig.json",
   "compilerOptions": {
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
-    "target": "ES2022",
-    "lib": ["ES2023"],
-    "module": "ESNext",
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "allowJs": true,
     "skipLibCheck": true,
-
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "isolatedModules": true,
-    "moduleDetection": "force",
-    "noEmit": true,
-
-    /* Linting */
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "noEmit": false, // Certifique-se de que noEmit seja false ou removido
+    "composite": true, // Adicione isso
+    "declaration": true, // Necessário para gerar arquivos .d.ts
+    "outDir": "./dist"
   },
-  "include": ["vite.config.ts"]
+  "include": ["*.ts", "*.js"], // Ajuste conforme necessário
+  "exclude": ["node_modules", "dist"]
 }
