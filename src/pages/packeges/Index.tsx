@@ -55,7 +55,7 @@ import praiaCrispim3 from "../../assets/praia-crispim3.jpg";
 
 export function Packages() {
   const [tab, setTab] = useState(0);
-  const [selectedPackage, setSelectedPackage] = useState(null); // State for modal
+  const [selectedPackage, setSelectedPackage] = useState<any>(null); // State for modal
   const [expandedImage, setExpandedImage] = useState(null); // State for expanded image on mobile
   const contact = "+5591992643006";
   const defaultMessage = "Quero obter o pacote ";
@@ -185,11 +185,11 @@ export function Packages() {
     { id: 1, title: "Pontos Históricos" },
   ];
 
-  function setValueTab(id) {
+  function setValueTab(id: number) {
     setTab(id);
   }
 
-  const openModal = (packageData) => {
+  const openModal = (packageData: any) => {
     setSelectedPackage(packageData);
     setExpandedImage(null); // Reset expanded image when opening a new modal
   };
@@ -199,7 +199,7 @@ export function Packages() {
     setExpandedImage(null); // Reset expanded image when closing modal
   };
 
-  const toggleExpandImage = (index) => {
+  const toggleExpandImage = (index: any) => {
     setExpandedImage(expandedImage === index ? null : index); // Toggle expanded state
   };
 
@@ -262,7 +262,7 @@ export function Packages() {
             <h3>{selectedPackage.name}</h3>
             <p>{selectedPackage.description}</p>
             <div className="modal-images">
-              {selectedPackage.images.map((img, index) => (
+              {selectedPackage.images.map((img: any, index: number) => (
                 <div
                   key={index}
                   className={`modal-image-wrapper ${expandedImage === index ? "expanded" : ""}`}
