@@ -6,3 +6,48 @@
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
+
+/* Floating WhatsApp Button */
+.floating-whatsapp-button {
+  display: none; /* Hidden by default on desktop */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #28a745; /* Green background */
+  color: #fff; /* White icon */
+  width: 60px; /* Round button size */
+  height: 60px;
+  border-radius: 50%; /* Make it round */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  z-index: 1000; /* Ensure it stays above other elements */
+  transition: background-color 0.3s ease;
+}
+
+.floating-whatsapp-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Show the button only on mobile (≤768px) */
+@media (max-width: 768px) {
+  .floating-whatsapp-button {
+    display: flex;
+  }
+}
+
+/* Optional: Adjust for very small screens */
+@media (max-width: 480px) {
+  .floating-whatsapp-button {
+    width: 60px;
+    height: 60px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .floating-whatsapp-button svg {
+    width: 30px;
+    height: 30px;
+  }
+}

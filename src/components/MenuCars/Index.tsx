@@ -1,15 +1,14 @@
 import "./index.css";
+import sw44 from "../../assets/sw44.jpg";
 
 export function MenuCars() {
   return (
     <div className="container-menu-cars">
       <div className="content-wrapper">
-        {/* Left side: Placeholder for the vehicle image */}
+        {/* Left side: Vehicle image */}
         <div className="image-section">
-          {/* You can add your vehicle image here */}
           <div className="image-placeholder">
-            {/* Placeholder for the image, replace with <img> when you have the source */}
-            <p>[Vehicle Image Placeholder]</p>
+            <img src={sw44} alt="Carro" />
           </div>
         </div>
 

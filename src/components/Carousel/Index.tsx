@@ -7,9 +7,10 @@ import "./index.css";
 
 //Images
 import banner1 from "../../assets/banner1.jpg"
-import banner2 from "../../assets/banner2.jpg"
 import cop30 from "../../assets/cop-30.jpg"
-
+import banner3 from "../../assets/COOPERBRAG3.jpg"
+import banner4 from "../../assets/COOPERBRAG4.jpg"
+import banner5 from "../../assets/COOPERBRAG5.jpg"
 
 interface CarouselProps {
   imgs?: string[];
@@ -18,9 +19,10 @@ interface CarouselProps {
 export function Carousel({ imgs }: CarouselProps) {
   const images = imgs || [
     banner1,
-    banner2,
+    banner5,
+    banner4,
+    banner3,
     cop30,
-    
   ];
   return (
     <div className="container-carousel">

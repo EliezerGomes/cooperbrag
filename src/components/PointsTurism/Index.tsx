@@ -1,4 +1,5 @@
 import "./index.css";
+import orla from "../../assets/orla-braganca2.jpg"
 
 export function PointTurism() {
   return (
@@ -17,7 +18,7 @@ export function PointTurism() {
         <div className="image-section">
           {/* Placeholder for the image, replace with <img> when you have the source */}
           <div className="image-placeholder">
-            <p>[Tourist Destination Image Placeholder]</p>
+            <img src={orla} alt="Orla" />
           </div>
         </div>
       </div>

@@ -1,158 +1,164 @@
 /* General container styling */
 .container-menu-cars {
-    width: 100%;
-    padding: 40px 20px;
-    background-color: #f8f9fa; /* Light background similar to the example */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 400px; /* Ensure there's enough space */
-  }
-  
-  /* Wrapper for content (image + text) */
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #f8f9fa; /* Light background similar to the example */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px; /* Ensure there's enough space */
+}
+
+/* Wrapper for content (image + text) */
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Max width for larger screens */
+  width: 100%;
+  gap: 40px; /* Space between image and text */
+}
+
+/* Image section styling */
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 300px;
+  background-color: #e0e0e0; /* Placeholder background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden; /* Prevent image overflow */
+}
+
+.image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image fills the space while maintaining aspect ratio */
+  display: block; /* Remove any default inline spacing */
+}
+
+/* Text section styling */
+.text-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between elements */
+}
+
+.text-section h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.text-section p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Button styling */
+.saiba-mais-btn {
+  background-color: #000080; /* Navy blue as requested */
+  color: #fff; /* White text */
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+}
+
+.saiba-mais-btn:hover {
+  background-color: #000066; /* Slightly darker shade on hover */
+}
+
+/* Responsive Design */
+
+/* Tablets and smaller desktops (max-width: 1024px) */
+@media (max-width: 1024px) {
   .content-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px; /* Max width for larger screens */
-    width: 100%;
-    gap: 40px; /* Space between image and text */
+    gap: 30px;
   }
-  
-  /* Image section styling */
-  .image-section {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .image-placeholder {
-    width: 100%;
-    height: 300px;
-    background-color: #e0e0e0; /* Placeholder background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    font-size: 16px;
-    color: #666;
-  }
-  
-  /* Text section styling */
-  .text-section {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Space between elements */
-  }
-  
+
   .text-section h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #333;
-    margin: 0;
-    line-height: 1.2;
+    font-size: 2rem;
   }
-  
+
   .text-section p {
-    font-size: 1.1rem;
-    color: #666;
-    line-height: 1.6;
-    margin: 0;
-  }
-  
-  /* Button styling */
-  .saiba-mais-btn {
-    background-color: #000080; /* Navy blue as requested */
-    color: #fff; /* White text */
-    border: none;
-    padding: 12px 24px;
     font-size: 1rem;
-    font-weight: 500;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: fit-content;
   }
-  
-  .saiba-mais-btn:hover {
-    background-color: #000066; /* Slightly darker shade on hover */
+
+  .image-placeholder {
+    height: 250px;
   }
-  
-  /* Responsive Design */
-  
-  /* Tablets and smaller desktops (max-width: 1024px) */
-  @media (max-width: 1024px) {
-    .content-wrapper {
-      gap: 30px;
-    }
-  
-    .text-section h1 {
-      font-size: 2rem;
-    }
-  
-    .text-section p {
-      font-size: 1rem;
-    }
-  
-    .image-placeholder {
-      height: 250px;
-    }
+}
+
+/* Mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column; /* Stack image and text vertically */
+    gap: 20px;
   }
-  
-  /* Mobile devices (max-width: 768px) */
-  @media (max-width: 768px) {
-    .content-wrapper {
-      flex-direction: column; /* Stack image and text vertically */
-      gap: 20px;
-    }
-  
-    .image-section,
-    .text-section {
-      flex: none;
-      width: 100%;
-      text-align: center; /* Center-align text for mobile */
-    }
-  
-    .text-section h1 {
-      font-size: 1.8rem;
-    }
-  
-    .text-section p {
-      font-size: 0.95rem;
-    }
-  
-    .image-placeholder {
-      height: 200px;
-    }
-  
-    .saiba-mais-btn {
-      margin: 0 auto; /* Center the button */
-    }
+
+  .image-section,
+  .text-section {
+    flex: none;
+    width: 100%;
+    text-align: center; /* Center-align text for mobile */
   }
-  
-  /* Smaller mobile devices (max-width: 480px) */
-  @media (max-width: 480px) {
-    .container-menu-cars {
-      padding: 20px 10px;
-    }
-  
-    .text-section h1 {
-      font-size: 1.5rem;
-    }
-  
-    .text-section p {
-      font-size: 0.9rem;
-    }
-  
-    .image-placeholder {
-      height: 150px;
-    }
-  
-    .saiba-mais-btn {
-      padding: 10px 20px;
-      font-size: 0.9rem;
-    }
+
+  .text-section h1 {
+    font-size: 1.8rem;
   }
+
+  .text-section p {
+    font-size: 0.95rem;
+  }
+
+  .image-placeholder {
+    height: 200px;
+  }
+
+  .saiba-mais-btn {
+    margin: 0 auto; /* Center the button */
+  }
+}
+
+/* Smaller mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .container-menu-cars {
+    padding: 20px 10px;
+  }
+
+  .text-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .text-section p {
+    font-size: 0.9rem;
+  }
+
+  .image-placeholder {
+    height: 150px;
+  }
+
+  .saiba-mais-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}

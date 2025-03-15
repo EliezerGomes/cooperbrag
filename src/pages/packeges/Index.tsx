@@ -10,14 +10,36 @@ import orlaBraganca2 from "../../assets/Orla-braganca.jpg";
 import orlaBraganca3 from "../../assets/orla-braganca2.jpg";
 
 import predios from "../../assets/predios-historcos.jpg";
-import historico from "../../assets/centro-historico-braganca.jpg";
+import predios2 from "../../assets/igreja-sao-benedito2.jpg";
+import predios3 from "../../assets/igreja-sao-benedito3.jpg";
+
 import verPeso from "../../assets/mercado-ver-o-peso.jpg";
+import verPeso2 from "../../assets/ver-peso2.jpg";
+import verPeso3 from "../../assets/ver-peso3.jpg";
+
 import teatroPaz from "../../assets/Belem-Teatro-Paz.jpg";
+import teatroPaz2 from "../../assets/teatro-paz2.jpg";
+import teatroPaz3 from "../../assets/teatro-paz3.jpg";
+
 import basilica from "../../assets/basilica-nossa-senhora-nazare.jpg";
+import basilica2 from "../../assets/basilica2.jpg";
+import basilica3 from "../../assets/basilica3.jpg";
+
 import bosque from "../../assets/bosque-rodrigues-alves.jpg";
+import bosque2 from "../../assets/bosque2.jpg";
+import bosque3 from "../../assets/bosque3.jpg";
+
 import verRio from "../../assets/complexo-turistico-ver-o-rio.jpg";
+import verRio2 from "../../assets/ver-rio2.jpg";
+import verRio3 from "../../assets/ver-rio3.jpg";
+
 import docas from "../../assets/estacao-docas.jpg";
+import docas2 from "../../assets/docas2.jpg";
+import docas3 from "../../assets/docas3.jpg";
+
 import fortePresepio from "../../assets/forte-presepio.jpg";
+import fortePresepio2 from "../../assets/castelo2.jpg";
+import fortePresepio3 from "../../assets/castelo3.jpg";
 
 import macarico from "../../assets/orla-de-macarico.jpg";
 import orlaMacarico2 from "../../assets/orla-macarico2.jpg";
@@ -82,16 +104,7 @@ export function Packages() {
       tab: 1,
       description:
         "A Igreja de São Benedito é um marco histórico com arquitetura rica e significado cultural profundo em Bragança.",
-      images: [predios],
-    },
-    {
-      image: historico,
-      name: "Centro Histórico de Bragança",
-      subtitle: "Esse pacote turístico inclui o translado completo para o Centro Histórico de Bragança",
-      tab: 1,
-      description:
-        "Explore o Centro Histórico de Bragança, repleto de história, cultura e charme colonial que contam a essência da região.",
-      images: [historico],
+      images: [predios, predios2, predios3], // Added new images
     },
     {
       image: macarico,
@@ -109,7 +122,7 @@ export function Packages() {
       tab: 1,
       description:
         "O Ver-o-Peso é um mercado tradicional de Belém, cheio de cores, sabores e história que refletem a cultura amazônica.",
-      images: [verPeso],
+      images: [verPeso, verPeso2, verPeso3], // Added new images
     },
     {
       image: teatroPaz,
@@ -118,7 +131,7 @@ export function Packages() {
       tab: 1,
       description:
         "O Teatro da Paz é uma joia arquitetônica de Belém, com interiores elegantes e um rico legado cultural.",
-      images: [teatroPaz],
+      images: [teatroPaz, teatroPaz2, teatroPaz3], // Added new images
     },
     {
       image: basilica,
@@ -127,7 +140,7 @@ export function Packages() {
       tab: 1,
       description:
         "A Basílica Nossa Senhora de Nazaré é um santuário majestoso, centro de devoção e beleza arquitetônica em Belém.",
-      images: [basilica],
+      images: [basilica, basilica2, basilica3], // Added new images
     },
     {
       image: bosque,
@@ -136,7 +149,7 @@ export function Packages() {
       tab: 1,
       description:
         "O Bosque Rodrigues Alves é um oásis verde em Belém, com fauna e flora que oferecem um refúgio natural na cidade.",
-      images: [bosque],
+      images: [bosque, bosque2, bosque3], // Added new images
     },
     {
       image: verRio,
@@ -145,7 +158,7 @@ export function Packages() {
       tab: 1,
       description:
         "Ver-o-Rio é um ponto panorâmico em Belém, perfeito para admirar a beleza do rio e o pôr do sol.",
-      images: [verRio],
+      images: [verRio, verRio2, verRio3], // Added new images
     },
     {
       image: docas,
@@ -154,7 +167,7 @@ export function Packages() {
       tab: 1,
       description:
         "A Estação das Docas é um complexo revitalizado em Belém, unindo gastronomia, cultura e vistas incríveis.",
-      images: [docas],
+      images: [docas, docas2, docas3], // Added new images
     },
     {
       image: fortePresepio,
@@ -163,7 +176,7 @@ export function Packages() {
       tab: 1,
       description:
         "O Forte do Presépio é um símbolo histórico de Belém, com vistas deslumbrantes e uma rica narrativa colonial.",
-      images: [fortePresepio],
+      images: [fortePresepio, fortePresepio2, fortePresepio3], // Added new images
     },
   ];
 
